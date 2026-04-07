@@ -75,12 +75,10 @@ a {
   --trabsition: .22s cubic-bezier(.4,0,.2,1);
 }
 
+/* --------------------------LAYOUT -----------------*/
+
 .container {
-    background-color: #faf4e4;
     display: grid;
-    grid-template-areas: 
-    "sidebar header header"
-    "sidebar main main";
 }
 
 .header {
