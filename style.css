@@ -447,4 +447,51 @@ a {
 
 .card-date { font-size: .75rem; color: var(--text-muted); }
 
+/*---------------------UPCOMING--------------*/
+.upcoming-list { display: grid; gap: .6rem; }
 
+.upcoming-item {
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: .9rem 1.1rem;
+  border: 1.5px solid rgba(0, 0, 0, .05);
+  transition: border-color var(--transition), transform var(--transition);
+  cursor: pointer;
+}
+.upcoming-item:hover{ background-color: var(--pink); transform: translateY(3px); }
+
+.upcoming-date {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  min-width: 38px;
+}
+.upcoming-date .day {
+  font-size: .68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+.upcoming-date .num {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.upcoming-info { flex: 1; }
+.upcoming-title { font-size: .9rem; font-weight: 600; }
+.upcoming-meta { font-size: .78rem; color: var(--text-muted); }
+
+.upcoming-tag {
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .2rem .6rem;
+  border-radius: 50px;
+}
+
+/*-----------------RIGHT SIDEBAR--------------------*/
+
+.right-sidebar { display: grid; gap: 1.4rem; }
