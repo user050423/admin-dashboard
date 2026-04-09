@@ -101,6 +101,8 @@ a {
   overflow-y: auto;
   transform: var(--transition);
   z-index: 200;
+  margin: .50rem;
+  border-radius: 10px;
 }
 
 
@@ -310,3 +312,13 @@ a {
 }
 
 /*-------------------MAIN-CONTENT!!!------------------*/
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.5rem;
+  padding: 1.8rem;
+  flex: 1;
+  align-items: start;
+}
+
