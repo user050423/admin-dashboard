@@ -422,4 +422,29 @@ a {
 .card-title { font-size: 1rem; font-weight: 600; }
 .card-sub { font-size: .82rem; color: var(--text-muted); }
 
+.card-footer {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  margin-top: .2rem;
+}
+
+.avatars { display: flex; }
+.av {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  color: #fff;
+  font-size: .65rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  border: 2px solid #ffff;
+  margin-left: -6px;
+}
+
+.av:first-child { margin-left: 0; }
+
+.card-date { font-size: .75rem; color: var(--text-muted); }
+
 
