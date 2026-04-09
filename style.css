@@ -103,6 +103,106 @@ a {
   min-height: 100vh;
 }
 
+
+/*---------------------SIDEBAR!!!------------------*/
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar-header h1 {
+  font-size: 1.9rem;
+  font-family: 'Instrument Serif', serif;
+  letter-spacing: -.02rem;
+}
+
+.sidebar-nav {
+  flex: 1;
+  display: grid;
+  gap: 2rem; 
+}
+
+.nav-label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .35);
+  display: block;
+  margin-bottom: .6rem;
+}
+
+.sidebar-nav ul {
+  display: grid;
+  gap: 2px;
+}
+
+.sidebar-nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  padding: .55rem .8rem;
+  border-radius: var(--raidius-sm);
+  font-size: 1rem;
+  font-weight: 400;
+  color: inherit;
+}
+
+.sidebar-nav li a i {
+  width: 18px;
+  text-align: center;
+  font-size: .95rem;
+}
+
+.sidebar-nav li a:hover {
+  background: rgba(244, 184, 218, .15);
+  color: var(--pink);
+  border-radius: 10px;
+}
+
+.sidebar-footer {
+  display: flex;
+  margin-top: auto;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.user-chip {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .6rem .5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 34px;
+  height: 34px;
+  background: var(--pink);
+  color: #1a1a1a;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: .85rem;
+  flex-shrink: 0;
+}
+
+.user-name {
+  display: block;
+  font-size: .88rem;
+  font-weight: 500;
+}
+
+.user-role {
+  display: block;
+  font-size: .75rem;
+  color:  rgba(255, 255, 255, .4);
+}
+
 button {
   border-radius: 100%;
   background-color: #f4b8da;
