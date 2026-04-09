@@ -322,3 +322,104 @@ a {
   align-items: start;
 }
 
+/*------------------------FEED------------------------*/
+.feed {
+  display: grid;
+  gap: 2rem;
+}
+
+.greeting h2 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.greeting h2 em {
+  font-style: italic; color: #b06090;
+}
+
+.greeting p {
+  color: var(--text-muted);
+  margin-top: .25rem;
+  font-size: .9rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.section-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -.01rem;
+}
+
+.see-all {
+  font-size: .8rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.see-all:hover { color: var(--text);}
+
+/*-------------------------CARDS--------------------*/
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  border: 1.5px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.1);
+}
+
+.card--pink {background: var(--pink-light); border-color: var(--pink); }
+.card--green {background: #e8faf2; border-color: var(--green); }
+.card--blue {background: #e8f4fd; border-color: var(--blue); }
+.card--yellow {background: #fdfae8; border-color: var(--yellow); }
+
+.card-top {
+  display: flex; align-items: center;
+  justify-content: space-between; }
+
+.card-tag {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.card-status {
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .15rem .55rem;
+  border-radius: 50px;
+}
+
+.card-status.in-progress { background: rgba(244, 184, 218, .5); color: #a0407a; }
+.card-status.review { background: rgba(184, 240, 212, .6); color: #207050; }
+.card-status.done { background: rgba(184, 216, 244, .5); color: #205080; }
+
+.card-title { font-size: 1rem; font-weight: 600; }
+.card-sub { font-size: .82rem; color: var(--text-muted); }
+
+
