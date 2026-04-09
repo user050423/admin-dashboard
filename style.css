@@ -72,21 +72,35 @@ a {
   --sidebar-w: 260px;
   --header-h: 70px;
   --shadow: 0 2px 16px rgba(0, 0, 0, .07);
-  --trabsition: .22s cubic-bezier(.4,0,.2,1);
+  --transition: .22s cubic-bezier(.4,0,.2,1);
 }
 
 /* --------------------------LAYOUT -----------------*/
 
 .container {
-    display: grid;
+  display: grid;
+  grid-template-columns: var(--sidebar-w), 1fr;
+  min-height: 100vh;
 }
 
-.header {
-    grid-area: header;
-    display: flex;
-    margin: 20px;
-    justify-content: space-between;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-dark);
+  color: var(--text-sidebar);
+  padding: 1.5rem 1.2rem;
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+  transform: var(--transition);
+  z-index: 200;
+}
 
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 button {
