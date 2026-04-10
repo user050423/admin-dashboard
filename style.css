@@ -569,3 +569,58 @@ a {
 .upload-icon.doc { background: #e8eeff; color: #4060c0; }
 
 .upload-dl { color: var(--text); font-size: .85rem;}
+
+/*------------------MOBILE TOPBAR---------*/
+.mobile-topbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: .8rem 1.2rem;
+  background: var(--bg);
+  border-bottom: 1.5px solid rgba(0, 0, 0, .06);
+  position: sticky;
+  top: 0;
+  z-index: 300;
+}
+
+
+.mobile-logo {
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.mobile-icons { display: flex; gap: .4rem; }
+.mobile-icons a { 
+  width: 36px; height: 36px;
+  display: grid;
+  place-items: center;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+}
+
+.mobile-icons a:hover { background: var(--bg-card); }
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: .4rem;
+  border-radius: var(--radius-sm)
+}
+
+.hamburger:hover { background: var(--bg-card); }
+.hamburger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+
+
