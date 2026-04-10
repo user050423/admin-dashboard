@@ -147,7 +147,7 @@ a {
   align-items: center;
   gap: .85rem;
   padding: .55rem .8rem;
-  border-radius: var(--raidius-sm);
+  border-radius: var(--radius-sm);
   font-size: 1rem;
   font-weight: 400;
   color: inherit;
@@ -538,3 +538,34 @@ a {
 
 .article-title { font-size: .85rem; font-weight: 600; color: var(--transition); }
 .article-meta { font-size: .75rem; color: var(--text-muted);}
+
+/*-------------UPLOADS---------*/
+.upload-list { display: grid; gap: .5rem; }
+.upload-item {
+  display: flex;
+  align-items: center; 
+  gap: .8rem;
+  padding: .5rem .6rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  border: 1.5px solid rgba(0, 0, 0, .04);
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.upload-item:hover { border-color: vR(--pink); }
+.upload-item span { flex: 1; font-size: .83rem; font-weight: 500; }
+
+.upload-icon {
+  width: 32px; height: 32px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-size: .6rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  flex-shrink: 0;
+}
+.upload-icon.pdf { background: #fde8e8; color: #c04040; }
+.upload-icon.doc { background: #e8eeff; color: #4060c0; }
+
+.upload-dl { color: var(--text); font-size: .85rem;}
