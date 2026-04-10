@@ -570,7 +570,9 @@ a {
 
 .upload-dl { color: var(--text); font-size: .85rem;}
 
-/*------------------MOBILE TOPBAR---------*/
+/*
+
+/*------------------MOBILE TOPBAR---------
 .mobile-topbar {
   display: none;
   align-items: center;
@@ -622,5 +624,21 @@ a {
   transition: var(--transition);
 }
 
+/*--------MOBILE OVERLAY--------
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 150;
+  opacity: 0;
+  transition: opacity var(--transition)
+}
+.sidebar-overlay:active {
+  display: block;
+  opacity: 1;
+}
+
+*/
 
 
